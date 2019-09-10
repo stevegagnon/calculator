@@ -1,0 +1,63 @@
+body {
+  background-color: black;
+  overflow: hidden;
+  color: white;
+  font: large monospace;
+  margin: 2em;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  color: rgb(168, 168, 168);
+  font-family: monospace;
+}
+
+.op {
+  color: rgb(131, 131, 131);
+}
+
+.entering { 
+  position: relative;
+}
+
+.entering::after {
+  content: "";
+  display: inline-block;
+  background-color: white;
+  vertical-align: top;
+  width: 1ch;
+  height: 1em;
+  animation: blink 1.2s infinite;
+}
+
+.button-pad {
+  margin-top: 1em;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 40px;
+  grid-gap: 5px;
+}
+
+.button-pad button {
+  background: rgb(26, 26, 26);
+  color: rgb(197, 197, 197);
+  font:  large monospace;
+  border-radius: 5px;
+  border: 1px solid rgb(70, 70, 70);
+}
+
+.button-pad button:hover {
+  background: rgb(56, 56, 56);
+}
+
+
+@keyframes blink {
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+
+/*# sourceMappingURL=/styles.6145e9cd.css.map */
