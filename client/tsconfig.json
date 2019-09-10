@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "jsx": "react",
+    "jsxFactory": "createElement",
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules",
+    ".cache",
+    "dist"
+  ]
+}
