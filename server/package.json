@@ -1,0 +1,11 @@
+{
+  "name": "calculator-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.1.2"
+  }
+}
